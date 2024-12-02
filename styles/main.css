@@ -1,0 +1,76 @@
+.oswald-light {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+:root {
+  --desktopSize: 50vw;
+  --rotation: 0%;
+}
+@media only screen and (max-width: 768px) {
+    :root {
+        --desktopSize: 90vw;
+    }
+    
+}
+
+.rotate-shoe{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: var(--desktopSize);
+    height: var(--desktopSize);
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    z-index: 5;
+
+}
+.rotate-shoe img {
+    position: relative;
+    width: var(--desktopSize) * 5;
+    height: var(--desktopSize);
+    transform: translate(var(--rotation),0%);
+    filter: drop-shadow(0 0 0.05rem white);
+}
+.right-leaning-navbar {
+    position: fixed;
+    z-index: 100;
+    margin: 10px;
+    padding: 10px;
+    width: 50px;
+    overflow: hidden;
+    right: 0%;
+    border-radius: 10px;
+    background-color: rgba(189, 189, 189, 0.201);
+}
+
+.right-leaning-navbar nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+
+
+}
+.navimage{
+    width: 50px;
+    height: 50px;
+}
+.phone-number-collector {
+    z-index: 20;
+    position: fixed;
+    bottom: 0%;
+    width: var(--desktopSize);
+    text-align: center;
+    left: 50%;
+    transform: translate(-50%,0%);
+    font-size: x-large;
+}
+@media only screen and (max-width: 768px) {
+    .phone-number-collector {
+        font-size: large;
+    }
+    
+}

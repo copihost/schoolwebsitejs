@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BBCxNMD</title>
+    <link
+      rel="shortcut icon"
+      href="items/Billionaire_Boys_Club_Icon.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/hero.css" />
+    <link rel="stylesheet" href="styles/popup.css" />
+    <script src="scripts/index.js"></script>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div class="hero" id="hero">
+      <div class="right-leaning-navbar" id="navbar" style="height: 50px">
+        <nav>
+          <img
+            src="items/hamburger-svgrepo-com.svg"
+            alt="button to open nav menu"
+            id="navmenu"
+            class="navimage"
+            onclick="toggleNav()"
+          />
+          <a href="index.html"
+            ><img
+              src="items/home-svgrepo-com.svg"
+              alt="Button to take you to the top of the page"
+              class="navimage"
+          /></a>
+          <a href="images.html"
+            ><img
+              src="items/image-picture-svgrepo-com.svg"
+              alt="Button to take you to images page"
+              class="navimage"
+          /></a>
+          <a href="#bottom"
+            ><img
+              src="items/comments-svgrepo-com.svg"
+              alt="Button to take you to the bottom of the page"
+              class="navimage"
+          /></a>
+        </nav>
+      </div>
+      <div class="phone-number-collector oswald-light">
+        <h2>SUBSCRIBE TO HEAR ABOUT FUTURE DROPS</h2>
+        <div>
+          ENTER PHONE NUMBER: <input type="text" placeholder="(xxx)-xxx-xxxx" />
+        </div>
+      </div>
+      <div class="rotate-shoe">
+        <img
+          src="items/shoesheet2.png"
+          alt="spritesheet for different angles of a shoe"
+          id="movingShoe"
+        />
+      </div>
+      <div class="hero-body">
+        <div class="hero pharell-section">
+          <div id="title-text">
+            <h1 class="oswald-light">
+              Billionaire Boys Club x Pharrell Hu NMD
+            </h1>
+          </div>
+          <div class="scrolling-container">
+            <div class="scrolling-banner">
+              <img
+                src="items/Billionaire_Boys_Club_Icon.svg"
+                alt="Billionaire boys club logo"
+              />
+              <img src="items/Original_Adidas_logo.svg" alt="Adidas logo" />
+              <img
+                src="items/Billionaire_Boys_Club_Icon.svg"
+                alt="Billionaire boys club logo"
+              />
+              <img src="items/Original_Adidas_logo.svg" alt="Adidas logo" />
+              <img
+                src="items/Billionaire_Boys_Club_Icon.svg"
+                alt="Billionaire boys club logo"
+              />
+              <img src="items/Original_Adidas_logo.svg" alt="Adidas logo" />
+            </div>
+            <div class="scrolling-banner">
+              <img
+                src="items/Billionaire_Boys_Club_Icon.svg"
+                alt="Billionaire boys club logo"
+              />
+              <img src="items/Original_Adidas_logo.svg" alt="Adidas logo" />
+              <img
+                src="items/Billionaire_Boys_Club_Icon.svg"
+                alt="Billionaire boys club logo"
+              />
+              <img src="items/Original_Adidas_logo.svg" alt="Adidas logo" />
+              <img
+                src="items/Billionaire_Boys_Club_Icon.svg"
+                alt="Billionaire boys club logo"
+              />
+              <img src="items/Original_Adidas_logo.svg" alt="Adidas logo" />
+            </div>
+          </div>
+        </div>
+        <div class="hero bbc-section">
+          <div class="bbc-text">
+            <p class="oswald-light">
+              When Pharrell and NIGO linked up to create BILLIONAIRE BOYS CLUB
+              AND ICECREAM in 2005, the project was destined for nothing but
+              greatness. <br /><br />
+              A story of hearts and minds, the dynamic duo first came together
+              through a shared passion for expensive jewelry, but it was their
+              broader appreciation for music, style, and culture that became the
+              catalyst for one of the most culturally important shoes of a
+              generation to be born.
+            </p>
+          </div>
+          <div class="bbc-image">
+            <figure>
+              <img
+                src="items/960x0.jpg"
+                alt="picture of Pharell Williams and Nigo posing in front of Billionaire Boys club store"
+              />
+              <figcaption class="oswald-light">
+                Pharell Williams and Nigo
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <div class="hero color-pallette-section">
+          <img src="colors/color0.png" alt="The Future of Color" />
+          <img
+            src="colors/color1.png"
+            alt="Color swatch"
+            onclick="openpopup(this, 'color1')"
+          />
+          <img
+            src="colors/color2.png"
+            alt="Color swatch"
+            onclick="openpopup(this, 'color2')"
+          />
+          <img
+            src="colors/color3.png"
+            alt="Color swatch"
+            onclick="openpopup(this, 'color3')"
+          />
+          <img
+            src="colors/color4.png"
+            alt="Color swatch"
+            onclick="openpopup(this, 'color4')"
+          />
+          <img
+            src="colors/color5.png"
+            alt="Color swatch"
+            onclick="openpopup(this, 'color5')"
+          />
+        </div>
+        <div class="hero video-section">
+          <h2 class="oswald-light big-title">WHAT THE CRITICS HAVE TO SAY.</h2>
+          <iframe
+            id="video2"
+            width="100%"
+            height="auto"
+            src="https://www.youtube.com/embed/foZaF1ijkfk"
+            title="THE BEST NMD IN RECENT TIMES?  Pharrell x BBC NMD HU ASTRONAUT BLUE REVIEW and Winter Essentials"
+            frameborder="50"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div class="hero filler-image">
+          <img
+            src="items/BBC-adidas-NMD-Hu-Astronaut-GW3955-2021-Release-Date-6.jpeg"
+            alt=" picture of shoes in a bush"
+          />
+        </div>
+        <div class="hero footer-section" id="bottom"></div>
+      </div>
+    </div>
+    <div class="popup" id="popup" onclick="closepopup(this, parent.parent)">
+      <div id="popup-window-data">
+        <img src="colors/color1.png" alt="color markup" id="popimg" />
+      </div>
+    </div>
+  </body>
+</html>
