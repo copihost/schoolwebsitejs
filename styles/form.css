@@ -1,0 +1,120 @@
+
+.anton-regular {
+    font-family: "Anton", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .lexend-regular {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Lexend", sans-serif;
+  }
+  #form_body{
+    display: none;
+  }
+  #contactPop {
+    display: none;
+  }
+  .closeButton {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+  }
+  .closeButton img {
+    width: 100%;
+  }
+  .contactPop {
+    background-color: rgba(222, 184, 135, 0.275);
+    position: absolute;
+    z-index: 49;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  }
+  .padded {
+    padding: 40px;
+    padding-right: 20px;
+  }
+  .wrapper{
+    z-index: 50;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 350px;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgb(95, 64, 6);
+
+  }
+  .wrapper h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  .wrapper .input_field{
+    margin-bottom: 10px;
+  
+  }
+  .wrapper .input_field input[type="text"],
+  .wrapper textarea{
+    width: 100%;
+    border: 1px solid gray;
+    padding: 10px;
+    
+  }
+  .wrapper textarea{
+    height: 80px;
+    resize: none;
+  }
+  .wrapper .btn input[type="submit"]{
+    border: 0;
+    margin-top: 15px;
+    padding: 10px;
+    width: 100%;
+    background: bisque;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  #error_message {
+    margin-bottom: 20px;
+    padding: 0px;
+    background: green;
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+  }
+  .wrapper .chk {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    width: 100%;
+    text-transform: uppercase;
+  }
+  
+  .wrapper .chk input{
+    grid-column: 1;
+    margin-top: 10px;
+  }
+  .wrapper .chk label{
+    text-align: left;
+    padding-top: 10px;
+  }
+  .wrapper .chk h3{
+    grid-column: 1 / 3;
+    font-size: medium;
+  }
