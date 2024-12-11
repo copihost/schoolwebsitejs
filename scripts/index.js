@@ -70,3 +70,16 @@ function toggleNav(){
     navbar.style.height = "50px"
   }
 }
+function showContactForm(){
+  const myformbk = document.getElementById("contactPop");
+  const myform = document.getElementById("form_body");
+  myform.style.display = "block"
+  myformbk.style.display = "block"
+}
+function hideContactForm(){
+  const myformbk = document.getElementById("contactPop");
+  const myform = document.getElementById("form_body");
+  myform.style.display = "none"
+  myformbk.style.display = "none"
+}
+
