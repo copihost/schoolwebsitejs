@@ -1,3 +1,9 @@
+<!--Gabe Copier
+ cs 2550
+ project 5
+ personal web site visitor form validation
+ 12/10/2024
+ I made the contact us button at the top left show and hide content so now I fulfilled that requirement-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,16 +15,97 @@
       href="items/Billionaire_Boys_Club_Icon.svg"
       type="image/x-icon"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="stylesheet" href="styles/hero.css" />
     <link rel="stylesheet" href="styles/popup.css" />
+    <link rel="stylesheet" href="styles/form.css" />
     <script src="scripts/index.js"></script>
+
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
     </style>
   </head>
 
   <body>
+    <div class="contactPop" id="contactPop">
+      <div class="wrapper" id="form_body">
+        <div class="closeButton">
+          <img
+            src="items/times-svgrepo-com.svg"
+            alt="x-icon"
+            onclick="hideContactForm()"
+          />
+        </div>
+        <h2>contact us</h2>
+        <div id="error_message"></div>
+
+        <form
+          id="myform"
+          method="POST"
+          action="https://wp.zybooks.com/form-viewer.php"
+        >
+          <div class="input_field">
+            <input type="text" placeholder="First Name" id="fname" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Last Name" id="lname" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Phone" id="phone" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Address" id="address" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Email" id="email" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="State" id="state" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="City" id="city" />
+          </div>
+          <div class="input_field">
+            <input type="text" placeholder="Zip Code" id="zip" />
+          </div>
+          <div class="input_field">
+            <textarea id="message" placeholder="message"></textarea>
+          </div>
+
+          <div class="chk" id="chk">
+            <h3>How did you hear about us?</h3>
+            <input
+              type="checkbox"
+              id="google"
+              name="find-page"
+              value="google"
+            /><label> google</label>
+            <input
+              type="checkbox"
+              id="friend"
+              name="find-page"
+              value="friend"
+            /><label>friend</label>
+            <input
+              type="checkbox"
+              id="newspaper"
+              name="find-page"
+              value="newspaper"
+            /><label>newspaper</label>
+          </div>
+          <div class="btn">
+            <input type="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+
     <div class="hero" id="hero">
       <div class="right-leaning-navbar" id="navbar" style="height: 50px">
         <nav>
@@ -64,6 +151,9 @@
       </div>
       <div class="hero-body">
         <div class="hero pharell-section">
+          <div class="contact_us">
+            <h3 onclick="showContactForm()">contact us</h3>
+          </div>
           <div id="title-text">
             <h1 class="oswald-light">
               Billionaire Boys Club x Pharrell Hu NMD
@@ -187,5 +277,7 @@
         <img src="colors/color1.png" alt="color markup" id="popimg" />
       </div>
     </div>
+    <script src="scripts/validation.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>
